@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  height: calc(100vh - 72px);
+  align-items: center;
+}
+.maintext {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.main h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 108px;
+  line-height: 102px;
+}
+
+.main p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: gray;
+  max-width: 57%;
+}
+.maintext-btn {
+  display: flex;
+  gap: 40px;
+}
+.maintext-btn #shopNow,
+#shopNow:hover {
+  all: unset;
+  background-color: red;
+  color: white;
+  height: 32px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.maintext-btn #category,
+#category:hover {
+  all: unset;
+  background-color: transparent;
+  color: grey;
+  border: 1px solid gray;
+  height: 32px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shoppingBrands {
+  display: flex;
+  gap: 20px;
+}
+.shoppingBrands:hover {
+  cursor: pointer;
+}
+
+.mainimg img {
+  height: 75vh;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+nav img {
+  height: 40px;
+}
+nav img:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+}
+
+button {
+  all: unset;
+  background-color: greenyellow;
+  color: black;
+  height: 32px;
+  padding: 6px 16px;
+  font-weight: 500;
+}
+
+button:hover,
+nav ul li {
+  cursor: pointer;
+}
