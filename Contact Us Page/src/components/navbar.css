@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin-right: 100px;
+}
