@@ -1,8 +1,5 @@
-# React + Vite
+# ReadMe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Contact Us page component is a React-based form that allows users to submit their inquiries, comments, or messages to the website's support team.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Photo](C:\Users\Rohan\Pictures\Screenshots\Screenshot 2023-12-29 202744.png)
