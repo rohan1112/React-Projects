@@ -12,7 +12,7 @@ function Rules() {
             If selected number is equal to the roll dice you will get same point
             as roll dice
           </p>
-          <p>If the guess wrong then 2 point will be deducted</p>
+          <p>But if the guess is wrong then 2 points will be deducted</p>
         </div>
       </RuleContainer>
     </>
