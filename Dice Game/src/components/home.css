@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gametext h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.game-btn {
+  display: flex;
+  justify-content: end;
+}
