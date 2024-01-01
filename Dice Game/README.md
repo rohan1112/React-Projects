@@ -1,4 +1,4 @@
-# Dice GAme
+# Dice Game
 
 Welcome to the Dice Game! This simple game allows players to roll a virtual dice and enjoy the randomness of chance.
 
