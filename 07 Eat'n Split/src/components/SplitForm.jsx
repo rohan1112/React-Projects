@@ -3,9 +3,9 @@ import Button from "./Button";
 
 function SplitForm({ onSplitBill, selectedFriend, userInfo }) {
   const [bill, setBill] = useState("");
-  const [myExpense, setMyExpense] = useState();
+  const [myExpense, setMyExpense] = useState("");
   const [billPayer, setBillPayer] = useState("You");
-  let friendExpense = bill ? bill - myExpense : "";
+  const friendExpense = bill ? bill - myExpense : "";
 
   const handleSplitBill = (e) => {
     e.preventDefault();

@@ -76,7 +76,7 @@ function App() {
           <SplitForm
             onSplitBill={onSplitBill}
             selectedFriend={selectedFriend}
-            userInfo={userInfo}
+            key={selectedFriend.id}
           ></SplitForm>
         )}
       </div>
