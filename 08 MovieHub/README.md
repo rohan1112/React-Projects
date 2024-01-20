@@ -1,8 +1,12 @@
-# React + Vite
+# Movies Watchlist App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple web application to save and track movies you want to watch.
 
-Currently, two official plugins are available:
+Features:  
++Add movies to your watchlist  
++Search for new movies to add  
++View all movies in your list  
++Mark movies as watched to remove from list  
++Movies have title, release year, runtime, imdb rating etc.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot 2024-01-20 213500](https://github.com/rohan1112/React-Projects/assets/94182713/29f5bb37-1afc-408f-9eb3-c83b6f836b68)
