@@ -1,6 +1,4 @@
-import { useEffect } from "react";
 import styles from "./CityList.module.css";
-import { useState } from "react";
 import CityItem from "./CityItem";
 import Message from "./Message";
 import Spinner from "./Spinner";
