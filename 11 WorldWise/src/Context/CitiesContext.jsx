@@ -39,8 +39,48 @@ function CitiesContext({ children }) {
     }
   }
 
+  async function createNewCity(newCity) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`http://localhost:3000/cities/`, {
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      setCities((city) => [...city, data]);
+    } catch {
+      throw new Error("City Not Found");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`http://localhost:3000/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => cities.filter((city) => city.id !== id));
+    } catch {
+      throw new Error("City Not Found");
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
-    <CityContext.Provider value={{ cities, isLoading, getCity, currentCity }}>
+    <CityContext.Provider
+      value={{
+        cities,
+        isLoading,
+        getCity,
+        currentCity,
+        createNewCity,
+        deleteCity,
+      }}
+    >
       {children}
     </CityContext.Provider>
   );
