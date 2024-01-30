@@ -51,7 +51,7 @@ function Map() {
       <MapContainer
         className={styles.map}
         center={mapPosition}
-        zoom={6}
+        zoom={9}
         scrollWheelZoom={true}
       >
         <TileLayer

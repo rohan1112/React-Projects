@@ -27,6 +27,7 @@ function CitiesContext({ children }) {
   }, []);
 
   async function getCity(id) {
+    if (Number(id) === currentCity.id) return;
     try {
       setIsLoading(true);
       const res = await fetch(`http://localhost:3000/cities/${id}`);
@@ -49,6 +50,7 @@ function CitiesContext({ children }) {
       });
       const data = await res.json();
       setCities((city) => [...city, data]);
+      setCurrentCity(data);
     } catch {
       throw new Error("City Not Found");
     } finally {
@@ -59,7 +61,7 @@ function CitiesContext({ children }) {
   async function deleteCity(id) {
     try {
       setIsLoading(true);
-      const res = await fetch(`http://localhost:3000/cities/${id}`, {
+      await fetch(`http://localhost:3000/cities/${id}`, {
         method: "DELETE",
       });
       setCities((cities) => cities.filter((city) => city.id !== id));
