@@ -1,7 +1,4 @@
-import { useQuestion } from "../context/QuizContext";
-
-function Finish() {
-  const { points, totalPoints, dispatch, highscore } = useQuestion();
+function Finish({ points, totalPoints, dispatch, highscore }) {
   return (
     <>
       <div className="result">
