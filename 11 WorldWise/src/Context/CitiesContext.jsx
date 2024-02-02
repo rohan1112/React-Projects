@@ -26,19 +26,22 @@ function CitiesContext({ children }) {
     fetchCities();
   }, []);
 
-  const getCity = useCallback(async function getCity(id) {
-    if (Number(id) === currentCity.id) return;
-    try {
-      setIsLoading(true);
-      const res = await fetch(`http://localhost:3000/cities/${id}`);
-      const data = await res.json();
-      setCurrentCity(data);
-    } catch {
-      throw new Error("City Not Found");
-    } finally {
-      setIsLoading(false);
-    }
-  }, []);
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (Number(id) === currentCity.id) return;
+      try {
+        setIsLoading(true);
+        const res = await fetch(`http://localhost:3000/cities/${id}`);
+        const data = await res.json();
+        setCurrentCity(data);
+      } catch {
+        throw new Error("City Not Found");
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [currentCity.id]
+  );
 
   async function createNewCity(newCity) {
     try {
