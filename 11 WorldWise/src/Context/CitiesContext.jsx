@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { createContext } from "react";
@@ -26,7 +26,7 @@ function CitiesContext({ children }) {
     fetchCities();
   }, []);
 
-  async function getCity(id) {
+  const getCity = useCallback(async function getCity(id) {
     if (Number(id) === currentCity.id) return;
     try {
       setIsLoading(true);
@@ -38,7 +38,7 @@ function CitiesContext({ children }) {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, []);
 
   async function createNewCity(newCity) {
     try {
