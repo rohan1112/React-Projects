@@ -12,5 +12,5 @@ React Projects
 8.MovieHub  
 9.Workout Timer  
 10.React-Quiz  
-11.WorldWise (rohan-world-wise.netlify.app)  
+11.WorldWise (https://rohan-world-wise.netlify.app/)  
 12.Atomic Blog
